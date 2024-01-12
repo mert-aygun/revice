@@ -1,8 +1,10 @@
 #A small app that automates the creation of React pages
 from src.core import Console
-from src.reactTemplates import HeroSection
+from src.reactTemplates import HeroSection, BaseStylesheet
 import os
 from time import sleep
+css = BaseStylesheet(colour=["#252525", "#e9e9e9"])
+
 def main():
     run = True
     primaryColour = ""
